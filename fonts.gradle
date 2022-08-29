@@ -8,7 +8,7 @@ android.sourceSets.main.assets.srcDirs += file("$buildDir/intermediates/ReactNat
  */
 afterEvaluate {
     def config = project.hasProperty("vectoricons") ? project.vectoricons : [];
-    def iconFontsDir = config.iconFontsDir ?: "../../node_modules/react-native-vector-icons/Fonts";
+    def iconFontsDir = config.iconFontsDir ?: "../../node_modules/react-native-vector-icons-font-awesome6/Fonts";
     def iconFontNames = config.iconFontNames ?: [ "*.ttf" ];
 
     def fontCopyTask = tasks.create(
